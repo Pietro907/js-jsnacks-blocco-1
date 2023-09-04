@@ -5,49 +5,40 @@ Crea un array vuoto.
 Chiedi per 6 volte all’utente di inserire un numero,
 se è dispari inseriscilo nell’array.
 */
-//Creo array list con numeri pari al'interno
-const list = [0,2,4,6,8,10];
-console.log(list);
-
-let listElement = document.querySelector('.number_insert_list');
-
+//Creo array list vuoto
+const numberUser = [];
+const list = [];
 
 //Chiedo sei volte all'utente di inserire un numero
-const numberOne = Number(prompt('Inserisci qui un numero 1'));
-const numberTwo = Number(prompt('Inserisci qui un numero 2'));
-const numberThree = Number(prompt('Inserisci qui un numero 3'));
-const numberFour = Number(prompt('Inserisci qui un numero 4'));
-const numberFive = Number(prompt('Inserisci qui un numero 5'));
-const numberSix = Number(prompt('Inserisci qui un numero 6'));
-let numberAllList = [numberOne,numberTwo,numberThree,numberFour,numberFive,numberSix];
-let access = false;
-for (let i = 0; i != 5; i++){
-    if (i === list){
-        access = true;
+for(let i = 0; i < 6; i++) {
+    numberUser.push( Number(prompt('inserisci un numero')));
+    console.log(list);
+    //Se è dispari lo aggiungo alla lista vuota
+    if (numberUser % 3 !== 0) {
+       list.push(numberUser);
+    }
+}
+console.log(numberUser);
 
-        console.log(i +' già presente');
-        
-    } else{
-        console.log(i +'peccato');
-    } /* else if (numberThree > list){
-        listElement.innerHTML = numberThree + (' Hai perso!, peccato XO');
-    } else if (numberFour > list){
-        listElement.innerHTML = numberFour + (' Hai perso!, peccato XO');
-    } else if (numberFive > list){
-        listElement.innerHTML = numberFive + (' Hai perso!, peccato XO');
-    } else if (numberSix > list){
-        listElement.innerHTML = numberSix + (' Hai perso!, peccato XO');
-    } */
-    console.log(i);
-}
+
+/* // array vuoto
+const numbers = [];
+const userNumbers = [];
+
+// chiedo all'utente di inserire 6 numeri casuali
+for (let i = 0; i < 6; i++) {
     
-    /*  else if (numberThree !== list){
+    userNumbers.push(Number(prompt(`Tasks ${i}, type here a random number.`)));
+    // loggo in console i numeri inseriti dall'utente
+    console.log(userNumbers);
+
+    // se il numero inserito è dispari lo inserisco nell'array e vado al prossimo numero fino a controllarli tutti
+    // se il numero inserito è pari lo ignoro e passo al prossimo numero fino a controllarli tutti
+    if (userNumbers[i] % 2 !== 0) {
+
+        numbers.push(userNumbers[i]);
+
+    }
+    
 }
-    listElement.innerHTML = machineNumber + (' Hai perso!, peccato XO')
-} else if (numberFour !== list){
-    listElement.innerHTML = machineNumber + (' Hai perso!, peccato XO')
-} else if (numberFive !== list){
-    listElement.innerHTML = machineNumber + (' Hai perso!, peccato XO')
-} else if (numberSix !== list){
-    listElement.innerHTML = machineNumber + (' Hai perso!, peccato XO')
-} */
+console.log(numbers); */
