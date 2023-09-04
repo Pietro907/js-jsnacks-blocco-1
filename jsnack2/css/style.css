@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-.text_center, .number_best {
+.text_center, .length_best {
     display: flex;
     justify-content: center;
     margin: 10rem 0 0;
 }
-.number_best {
+.length_best {
     background-color: greenyellow;
     
 }
