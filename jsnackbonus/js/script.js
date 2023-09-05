@@ -15,7 +15,7 @@ for(let i = 0; i < 6; i++) {
     console.log(list);
 
     //Se è dispari lo aggiungo alla lista vuota
-    if (list[i] % 2 !== 0) {
+    if (list[i] % 3 === 0) {
        numberUser.push(list[i]);
     }
 }
