@@ -19,17 +19,12 @@ let somma = 0;
 //calcola somma
 for(let i = 0 ; i < numberList.length; i++)
 {
-   // 2 + 5
-   // numberList[0] + numberList[1];
-   // numberList[0] + numberList[1] + numeberList[2] ... + numeberList[n];
-   // somma = numberList[0] + numberList[1];
-   // somma = somma + numberLIst[2];
-   // somma = somma + numberList[3];
-   // somma = somma + numberList[n];
+   
 
-   //somma = somma + numberList[i];
-   somma = numberList[i];
+somma += Number(numberList[i]);
+   
 }
+document.querySelector('.summary_ten_number').innerHTML = somma;
 console.log(somma);
 
 
